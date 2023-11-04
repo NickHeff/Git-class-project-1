@@ -1,0 +1,19 @@
+const player = new OpenPlayerJS('[PLAYER ID]');
+player.addElement({
+    id: '[MY ELEMENT ID]',
+    title: '[TOOLTIP LABEL]',
+    type: '[button, div, span, p, etc.]',
+    styles: {}, // Can add custom styles to element using camelCase styles (marginTop, boxShadow, etc.)
+    content: '', // Can override the content generated inside the control, but it won't accept images under the <img> tag for security purposes
+    position: 'right', // Any of the possible positions for a control (top, top-left, middle, bottom-right, etc.)
+    showInAds: false, // or true
+    init: (player) => {}, // Pass an instance of the player for advanced operations
+    click: () => {},
+    mouseenter: () => {},
+    mouseleave: () => {},
+    keydown: () => {},
+    blur: () => {},
+    focus: () => {},
+    destroy: (player) => {}, // Pass an instance of the player for advanced operations
+});
+player.init();
